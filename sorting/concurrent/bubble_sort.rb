@@ -29,21 +29,21 @@ def bubble_sort(ary)
   ary
 end
 
-f1 = File.open("./../data/#{SIZE}/seed0.txt", 'r')
+f1 = File.open("./../../data/#{SIZE}/seed0.txt", 'r')
 ary1 = Array.new(SIZE)
 index = 0
 f1.each_line do |row|
   ary1[index] = row.chomp.to_i
   index += 1
 end
-f2 = File.open("./../data/#{SIZE}/seed1.txt", 'r')
+f2 = File.open("./../../data/#{SIZE}/seed1.txt", 'r')
 ary2 = Array.new(SIZE)
 index = 0
 f2.each_line do |row|
   ary2[index] = row.chomp.to_i
   index += 1
 end
-f3 = File.open("./../data/#{SIZE}/seed2.txt", 'r')
+f3 = File.open("./../../data/#{SIZE}/seed2.txt", 'r')
 ary3 = Array.new(SIZE)
 index = 0
 f3.each_line do |row|

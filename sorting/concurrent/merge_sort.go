@@ -70,7 +70,7 @@ var (
 )
 
 func main() {
-	fp, _ := os.Open("../data/" + strconv.Itoa(size) + "/seed0.txt")
+	fp, _ := os.Open("../../data/" + strconv.Itoa(size) + "/seed0.txt")
 	scanner := bufio.NewScanner(fp)
 	ary1 := make([]int, size)
 	i := 0
@@ -81,7 +81,7 @@ func main() {
 	for i := 0; i < len(ary1); i++ {
 		store[strconv.Itoa(i)+","+strconv.Itoa(i)] = ary1[i : i+1]
 	}
-	fp, _ = os.Open("../data/" + strconv.Itoa(size) + "/seed1.txt")
+	fp, _ = os.Open("../../data/" + strconv.Itoa(size) + "/seed1.txt")
 	scanner = bufio.NewScanner(fp)
 	ary2 := make([]int, size)
 	i = 0
@@ -89,7 +89,7 @@ func main() {
 		ary2[i], _ = strconv.Atoi(scanner.Text())
 		i++
 	}
-	fp, _ = os.Open("../data/" + strconv.Itoa(size) + "/seed2.txt")
+	fp, _ = os.Open("../../data/" + strconv.Itoa(size) + "/seed2.txt")
 	scanner = bufio.NewScanner(fp)
 	ary3 := make([]int, size)
 	i = 0
